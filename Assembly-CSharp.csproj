@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>9.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{ED6C789E-58A7-AE5C-8FCB-C6BE120AB8D9}</ProjectGuid>
+    <ProjectGuid>{44D49B60-8ABC-4F64-38A9-C5BB7AD51D05}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,11 +53,15 @@
     <UnityVersion>2021.2.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\Scripts\Old\Enemy\Enemy.cs" />
     <Compile Include="Assets\Scripts\Old\Test.cs" />
     <Compile Include="Assets\Scripts\Old\EnumScript.cs" />
     <Compile Include="Assets\Scripts\Old\Coin.cs" />
     <Compile Include="Assets\Scripts\Old\ScriptableObjects\SOCard.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Old\ScriptableObjects\SOUIManager.cs" />
     <Compile Include="Assets\Scripts\Old\Enemy\TextUIEnemy.cs" />
     <Compile Include="Assets\Scripts\Old\GameManager.cs" />
@@ -70,7 +74,6 @@
     <Compile Include="Assets\Scripts\Old\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Old\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Old\Enemy\EnemyHealth.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
